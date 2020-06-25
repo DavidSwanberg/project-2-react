@@ -12,7 +12,7 @@ A single page application built in React. The New York Times Top Stories headlin
 ## API
 
 Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
-
+[Link to NYT API data accessed with API key](https://api.nytimes.com/svc/topstories/v2/home.json?api-key=i2JyHtAdfPqB0jQkirLcwBVb7xyCv0US)
 
 ```
 {data: {} }
