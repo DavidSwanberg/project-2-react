@@ -2,7 +2,7 @@
 
 ## Project Links
 
-- [add your github repo link]()
+- [add your github repo link](https://github.com/DavidSwanberg/project-2-react/)
 - [add your deployment link]()
 
 ## Project Description
