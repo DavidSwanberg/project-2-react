@@ -7,7 +7,7 @@
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+A single page application built in React. The New York Times Top Stories headlines will render as a list on the home page. Upon clicking the headline a card will be revealed that includes the article image, title, description, and link. The user will also have an opportunity to add the article their "reading-list". Post-MVP could include data from other news sources as well as the ability to save or email out a reading-list.
 
 ## API
 
