@@ -64,7 +64,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Article Component | H | 5hrs | | |
 | List Component | H | 8hrs| | |
 | Styling | M | 10 hrs| | |
-| Debugging L | 5 hrs | | |
+| Debugging | L | 5 hrs | | |
 | Total | H | 36hrs|  |  |
 
 ### Time Priority Matrix
