@@ -3,7 +3,8 @@ import {Link} from 'react-router-dom'
 import './Headlines.css' 
 
 const Headlines = props => {
-  let newsList = props.nytData.results.map(article => {
+    console.log('headlines props', props)
+  let newsList = props.nytData.map(article => {
 
     const handleClick = async (e) =>{
       props.setNytArticle(article)
@@ -15,7 +16,7 @@ const Headlines = props => {
   });
 
   return (
-    <div>
+    <div className="Headlines">
       <ul >{newsList}</ul>
     </div>
   );

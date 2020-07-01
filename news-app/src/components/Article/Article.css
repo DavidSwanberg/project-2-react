@@ -1,0 +1,18 @@
+.abstractBox {
+    margin: auto;
+    width: 75%
+}
+
+.articleBox{
+    padding: 10px;
+}
+
+.articlebutton{
+    margin: auto;
+    color: red;
+}
+
+a:link a:visited{
+ color: red;
+ text-decoration: none;
+}

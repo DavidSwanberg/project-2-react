@@ -1,4 +1,5 @@
 import React from 'react';
+import './Article.css' 
 
 const Article = props => {
     console.log('article props',props)
@@ -9,15 +10,17 @@ const Article = props => {
 
     } 
 
+    const option = props.readingList.includes(props.nytArticle) ? "remove from list" : "add to list";
+
     return (
-        <div>
-           <img src={props.nytArticle.multimedia[2].url} alt={props.nytArticle.title}/>
+        <div className="articleBox">
+          {props.nytArticle.multimedia ? <img src={props.nytArticle.multimedia[2].url} alt={props.nytArticle.title}/>:null}
            <h3>{props.nytArticle.title}</h3>
-         <p>{props.nytArticle.abstract}</p>
-         <a href={props.nytArticle.url}>
+         <p className="abstractBox">{props.nytArticle.abstract}</p>
+         <a className="articlebutton" href={props.nytArticle.url}>
          Read
          </a>
-         <button onClick={handleClick}>Add to List</button>
+         <p className="articlebutton" onClick={handleClick}>{option}</p>
         </div>
     )
 }
