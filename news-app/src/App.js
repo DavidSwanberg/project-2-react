@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Headlines from "./components/Headlines/Headlines";
 import Article from "./components/Article/Article";
-import List from "./components/List/List";
 import "./App.css";
 import {Route, Link} from 'react-router-dom'
 
@@ -56,7 +55,7 @@ const App = () => {
         {nytArticle.title ? 
         <Route path='/article/:title' render={props => 
         <Article nytArticle={nytArticle} handleListToggle={handleListToggle} readingList={readingList}/> }/>
-        : <img src="https://media.giphy.com/media/GCjueAStKH9yU/giphy.gif" alt="gif"/>}
+        : <div className="landingImg"><img className="landingGif"src="https://media.giphy.com/media/GCjueAStKH9yU/giphy.gif" alt="gif"/></div>}
       </div>
       <div className="filterList">
         <p onClick={() => handleFilterClick("all")} className={filter === "all"? "is-active" : ""}>Top Stories</p>

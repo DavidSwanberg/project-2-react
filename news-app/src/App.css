@@ -64,3 +64,74 @@ p{
   width: 50%;
 }
 
+@media only screen and (min-width: 700px) {
+
+  .Headlines {
+    max-width: 700px;
+    margin: auto;
+    height: 350px;
+
+  }
+
+  .filterList {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 700px;
+    margin-top: 20px;
+  }
+
+  .articleBox{
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    margin: auto;
+    height: 50vh;
+  }
+
+  .articleContent {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .articleMedia {
+    margin: auto;
+  }
+
+  .articleTitle {
+    margin: none;
+  }
+
+  .articleImg{
+    min-width: 150px;
+  }
+
+  .abstractBox {
+    margin: none;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
+  .articleButtons{
+    margin: none;
+    display: flex;
+
+  }
+
+  li{
+    width: 99%;
+  }
+
+  .landingImg{
+    height: 50vh;
+    padding: auto;
+  }
+
+  .landingGif {
+    margin: auto;
+    margin-top: 50px;
+  }
+
+}

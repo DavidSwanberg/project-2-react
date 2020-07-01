@@ -10,17 +10,23 @@ const Article = props => {
 
     } 
 
-    const option = props.readingList.includes(props.nytArticle) ? "remove from list" : "add to list";
+    const option = props.readingList.includes(props.nytArticle) ? "Remove from List" : "Add to list";
 
     return (
         <div className="articleBox">
-          {props.nytArticle.multimedia ? <img src={props.nytArticle.multimedia[2].url} alt={props.nytArticle.title}/>:null}
-           <h3>{props.nytArticle.title}</h3>
+        <div className="articleMedia">
+          {props.nytArticle.multimedia ? <img className="articleImg" src={props.nytArticle.multimedia[2].url} alt={props.nytArticle.title}/>:null}
+          </div>
+          <div className="articleContent">  
+          <h3 className="articleTitle">{props.nytArticle.title}</h3>
          <p className="abstractBox">{props.nytArticle.abstract}</p>
+         <div className="articleButtons">
          <a className="articlebutton" href={props.nytArticle.url}>
          Read
          </a>
          <p className="articlebutton" onClick={handleClick}>{option}</p>
+         </div>
+         </div>
         </div>
     )
 }
