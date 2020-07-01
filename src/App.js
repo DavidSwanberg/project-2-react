@@ -53,7 +53,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="header">
-        <Heading onClick={()=> window.location.reload(false)}/>
+        <Heading/>
         {nytArticle.title ? 
         <Route path='/article/:title' render={props => 
         <Article nytArticle={nytArticle} handleListToggle={handleListToggle} readingList={readingList}/> }/>

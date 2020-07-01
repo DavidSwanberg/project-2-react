@@ -28,6 +28,18 @@ h1 {
   pointer-events: none;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track{
+  background: white;
+}
+
+::-webkit-scrollbar-thumb{
+  background: red;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -81,6 +93,7 @@ p{
 
 @media only screen and (min-width: 700px) {
 
+  
   .Headlines {
     max-width: 700px;
     margin: auto;
@@ -122,6 +135,7 @@ p{
 
   .articleImg{
     min-width: 150px;
+    margin-right: 7px;
   }
 
   .abstractBox {
@@ -137,7 +151,7 @@ p{
   }
 
   li{
-    width: 99%;
+    width: 98%;
   }
 
   .landingImg{

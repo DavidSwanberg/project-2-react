@@ -2,7 +2,7 @@ import React from 'react';
 
 const Heading = () =>{
     return (
-        <h1>Headlines.</h1>
+        <h1 onClick={()=> window.location.reload(false)}>Headlines.</h1>
     )
 }
 
