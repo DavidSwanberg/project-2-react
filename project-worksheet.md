@@ -3,7 +3,7 @@
 ## Project Links
 
 - [Github repo link](https://github.com/DavidSwanberg/project-2-react/)
-- [add your deployment link]()
+- [add your deployment link](https://jovial-goodall-a7f59a.netlify.app/)
 
 ## Project Description
 
@@ -49,36 +49,44 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Description | 
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
-| Headlines | This will be s scrollable list of headlines rendered upon load | 
+| Headlines | This will be a scrollable list of headlines with the ability to filter the headlines into a reading list| 
 | Article | the article card will display upon headline click. Information for the corresponding article will be rendered |
-| Reading List | a filtered list of headlines controlled by the user, will behave like the Headlines component | 
+| List Toggle |  a bar above the headlines that toggles between Top Stories and My List|
+| Landing Image | a gif or image that appears in the article area upon load. Post-mvp might include a variety of images randomly selected from an array| 
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Initial Architecture | H | 1hr|  |  |
-| Pulling and Rendering API | H | 5hrs| |  |
-| Headline Component | H | 2hrs | |
-| Article Component | H | 5hrs | | |
-| List Component | H | 8hrs| | |
-| Styling | M | 10 hrs| | |
-| Debugging | L | 5 hrs | | |
-| Total | H | 36hrs|  |  |
+| Initial Architecture | H | 1hr| 1hr | 1hr |
+| Pulling and Rendering API | H | 5hrs| 2hr |  2hr|
+| Headline Component | H | 2hrs | 1hr | 2hr |
+| Article Component | H | 5hrs | 6hr| 6hr |
+| List Component | H | 8hrs| 6hr | 6hr |
+| Styling | M | 10 hrs| 9hr | 8hr |
+| Debugging | L | 5 hrs | 1hr| 1hr |
+| Total | H | 36hrs| 30hr | 30hr |
 
 ### Time Priority Matrix
 [Link](https://imgur.com/XSvZAsM)
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+N/A
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+A function that moves data into my reading list array.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+const handleListToggle = article => {
+    const listArr = readingList.slice();
+    const articleIndex = listArr.indexOf(article);
+    if (articleIndex > -1) {
+      listArr.splice(articleIndex, 1);
+    } else {
+      listArr.push(article);
+    }
+    setReadingList(listArr);
+  };
 ```

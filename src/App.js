@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Headlines from "./components/Headlines/Headlines";
 import Article from "./components/Article/Article";
+import Heading from "./components/Heading/Heading";
+import ListToggle from "./components/ListToggle/ListToggle";
+import LandingImage from "./components/LandingImage/LandingImage";
 import "./App.css";
 import {Route, Link} from 'react-router-dom'
 
@@ -35,7 +38,6 @@ const App = () => {
       listArr.push(article);
     }
     setReadingList(listArr);
-    console.log('listArr',listArr)
   };
   console.log('readingList',readingList)
 
@@ -51,16 +53,13 @@ const App = () => {
   return (
     <div className="App">
       <div className="header">
-        <h1 onClick={()=> window.location.reload(false)}>Headlines.</h1>
+        <Heading onClick={()=> window.location.reload(false)}/>
         {nytArticle.title ? 
         <Route path='/article/:title' render={props => 
         <Article nytArticle={nytArticle} handleListToggle={handleListToggle} readingList={readingList}/> }/>
-        : <div className="landingImg"><img className="landingGif"src="https://media.giphy.com/media/GCjueAStKH9yU/giphy.gif" alt="gif"/></div>}
+        : <LandingImage/>}
       </div>
-      <div className="filterList">
-        <p onClick={() => handleFilterClick("all")} className={filter === "all"? "is-active" : ""}>Top Stories</p>
-        <p onClick={() => handleFilterClick("list")} className={filter === "list"? "is-active" : ""}>My List</p>
-      </div>
+      <ListToggle handleFilterClick={handleFilterClick} filter={filter}/>
       <div className="scrollbox">
         {nytData ? <Route path='/' render={props => <Headlines nytData={displayData} setNytArticle={setNytArticle}/> }/>: null}
       </div>
