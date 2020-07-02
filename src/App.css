@@ -18,6 +18,10 @@ h1 {
   cursor: pointer;
 }
 
+li{
+  width: 98%;
+}
+
 .is-active {
   background-color: red;
   color: white;
@@ -28,15 +32,15 @@ h1 {
   pointer-events: none;
 }
 
-::-webkit-scrollbar {
+.scrollbox ::-webkit-scrollbar {
   width: 5px;
 }
 
-::-webkit-scrollbar-track{
+.scrollbox ::-webkit-scrollbar-track{
   background: white;
 }
 
-::-webkit-scrollbar-thumb{
+.scrollbox ::-webkit-scrollbar-thumb{
   background: red;
 }
 
@@ -163,5 +167,6 @@ p{
     margin: auto;
     margin-top: 50px;
   }
+
 
 }
