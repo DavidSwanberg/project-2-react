@@ -3,7 +3,8 @@
 ## Project Links
 
 - [Github repo link](https://github.com/DavidSwanberg/project-2-react/)
-- [add your deployment link](https://jovial-goodall-a7f59a.netlify.app/)
+- [deployment link](https://jovial-goodall-a7f59a.netlify.app/)
+= [YoutTube link](https://youtu.be/Xw2mCpsIkso)
 
 ## Project Description
 

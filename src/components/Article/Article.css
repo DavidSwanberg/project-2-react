@@ -10,7 +10,7 @@
 }
 
 .articleButtons {
-    margin-left: 50px;
+    margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
 } 
@@ -18,4 +18,12 @@
 a:link a:visited{
  color: red;
  text-decoration: none;
+}
+
+@media only screen and (min-width: 700px) {
+
+
+    .articleButtons{
+        margin-left: 50px;
+    }
 }
