@@ -4,6 +4,12 @@
   width: 100%;
 }
 
+
+.landingImg{
+  padding-bottom: 0px;
+}
+
+
 #filterTab{
   cursor: pointer;
 }
@@ -120,7 +126,7 @@ p{
     flex-direction: row;
     max-width: 500px;
     margin: auto;
-    height: 40vh;
+    height: 300px;
   }
 
   .articleContent {
@@ -159,13 +165,13 @@ p{
   }
 
   .landingImg{
-    height: 40vh;
+    height: 300px;
     padding: auto;
   }
 
   .landingGif {
     margin: auto;
-    margin-top: 50px;
+    height: 270px;
   }
 
 

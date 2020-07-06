@@ -4,7 +4,7 @@
 
 - [Github repo link](https://github.com/DavidSwanberg/project-2-react/)
 - [deployment link](https://jovial-goodall-a7f59a.netlify.app/)
-= [YoutTube link](https://youtu.be/Xw2mCpsIkso)
+- [YoutTube link](https://youtu.be/Xw2mCpsIkso)
 
 ## Project Description
 
